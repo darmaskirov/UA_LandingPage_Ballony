@@ -1,0 +1,30 @@
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    //@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap')
+// p
+//     color: red
+
+html
+    font-size: 62.5%
+    //@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap')
+    @include respond(tab-land)
+        font-size: 56.25%
+    @include respond(tab-port)
+        font-size: 50%
+    @include respond(phone)
+        font-size: 30%
+    @include respond(big-screen)
+        font-size: 75%
+
+body
+    padding: 5rem
+    background-color: $color-white
+
+
+.container
+    background-color: lighten(#F7F7F7, 90%)
+    position: relative
+    z-index: 1
+
